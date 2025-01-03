@@ -1,0 +1,162 @@
+/* General Reset and Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.jumbotron p {
+    font-size: 1.5rem;
+}
+
+
+/* Navbar Styling */
+.navbar-inverse {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ddd;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: #555;
+}
+.navbar-inverse .navbar-toggle {
+    background-color: #555;
+}
+
+/* Panel Styling */
+.panel {
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.panel-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.panel-footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+.panel-primary .panel-heading {
+    background-color: #007bff;
+    color: #fff;
+}
+.panel-danger .panel-heading {
+    background-color: #dc3545;
+    color: #fff;
+}
+.panel-success .panel-heading {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+}
+footer .form-inline {
+    margin-top: 10px;
+}
+footer .form-inline .form-control {
+    border-radius: 0;
+}
+footer .btn {
+    border-radius: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    .jumbotron p {
+        font-size: 1.2rem;
+    }
+    .panel-footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+    .jumbotron p {
+        font-size: 1rem;
+    }
+    footer .form-inline {
+        display: block;
+        text-align: center;
+    }
+    footer .form-inline .form-control,
+    footer .form-inline .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* Box Styling */
+.form-control {
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    width: auto;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+.form-control::placeholder {
+    color: #888;
+    font-style: italic;
+}
+.form-control {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    display: inline-block;
+    width: auto;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    pointer-events: none; /* Makes it non-interactive */
+}
+.form-control::placeholder {
+    color: #555;
+    font-style: normal;
+    font-weight: bold;
+}
+a.btn {
+    text-decoration: none; /* Removes underline from links */
+}
